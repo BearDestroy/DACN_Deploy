@@ -2,11 +2,7 @@ import type { AxiosInstance, AxiosRequestConfig } from 'axios'
 import axios from 'axios'
 
 const httpInstance: AxiosInstance = axios.create({
-  baseURL: '/api',
-  timeout: 10000,
-  headers: {
-    'Content-Type': 'application/json'
-  }
+  baseURL: '/api'
 })
 
 httpInstance.interceptors.request.use(async (config) => {
